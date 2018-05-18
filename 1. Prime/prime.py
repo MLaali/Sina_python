@@ -8,4 +8,5 @@ c=0
    if c==2:
     it is prime
     
+    test
     
