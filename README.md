@@ -1,2 +1,4 @@
-# Sina_python
-آموزش Python
+# Python for teens (SINA)
+<p dir="rtl">
+اینجا تمرین هایی برای آموزش پایتون به مبتدیان جمع آوری شده است
+</P>
