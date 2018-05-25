@@ -1,2 +1,2 @@
 def changer(a)
- if a%
+ if a%10==0:
