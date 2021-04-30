@@ -7,7 +7,12 @@ print("Making %d records\n" % records)
 fieldnames=['id','name','vote','city']
 writer = csv.DictWriter(open("people.csv", "w"), fieldnames=fieldnames)
 
-names=['Ahmad', 'Maryam', 'Hesam', 'Navid', 'Sara', 'Atena']
+names=['Nazanin','Mohammad','Mojtaba','Foujan','Fateme','Melina','Sajede',
+       'Hosein','Artemis','MobinaZ','MohammadAmin',
+       'Hannane','Zahra','MohammadSaeed','Parmida','Raika',
+       'Bahar','Maryam','MobinaH','Parisa']
+
+
 cities=['Kashan', 'Tabriz', 'Hamdan', 'Rasht']
 
 writer.writerow(dict(zip(fieldnames, fieldnames)))
