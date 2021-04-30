@@ -7,6 +7,6 @@ def read_csv(file_name,file_data):
     for row in reader:
         file_data.append(row)
 
-poeple=[]
-read_csv('people.csv',poeple)
-print(len(poeple))
+people=[]
+read_csv('people.csv',people)
+print(len(people))
