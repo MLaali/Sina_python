@@ -27,7 +27,8 @@ def read_votes(filename):
         vote.append(aline[comma[0]+1:comma[1]])
         vote.append((aline[comma[1]+1:comma[2]]))
         vote.append(aline[comma[2]+1:][:-1])
-        votes.append(vote)  
+        if len(vote[1])>1:
+            votes.append(vote)  
     vote_file.close()
     return votes
 
@@ -58,4 +59,9 @@ def find_individual(votes):
 votes=read_votes(filename)
 cities=find_cities(votes)
 individuals=find_individual(votes)
-individuals.index('Mohammad')
+
+ci=[]
+for city in cities:
+    for individual in individuals:
+        ci.append([city,individual])
+ci.index(['Rasht', 'Mojtaba'])
